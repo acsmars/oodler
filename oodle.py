@@ -19,9 +19,9 @@ def soodle( oodle ):
 			foodle.close()
 
 def oodlr( oodle, roodle=0 ):
+	noodle = []
 	if roodle>0: oodle = oodlr(oodle,roodle-1)
 	if args.accent:
-		noodle = []
 		for doodle in range(len(oodle)):
 			if oodle[doodle] == 'a': noodle.append(u"oôdle")
 			elif oodle[doodle] == 'e': noodle.append(u"oödle")
@@ -40,7 +40,6 @@ def oodlr( oodle, roodle=0 ):
 		if roodle>0: print len(noodle)
 		return noodle
 	elif args.binary:
-		noodle = []
 		for doodle in range(len(oodle)):
 			if oodle[doodle] == 'a': noodle.append(u"oodlE")
 			elif oodle[doodle] == 'e': noodle.append(u"oodLe")
@@ -59,7 +58,6 @@ def oodlr( oodle, roodle=0 ):
 		if roodle>0: print len(noodle)
 		return noodle
 	else:
-		noodle = []
 		for doodle in range(len(oodle)):
 			if oodle[doodle] in 'aeiou' or (oodle[doodle] == 'y' and oodley(oodle,doodle)):
 				noodle.append("oodle")
