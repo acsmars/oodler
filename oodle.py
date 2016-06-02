@@ -38,7 +38,6 @@ def oodlr( oodle, roodle=0 ):
 			else: noodle.append(oodle[doodle])
 		noodle = ''.join(noodle)
 		if roodle>0: print len(noodle)
-		return noodle
 	elif args.binary:
 		for doodle in range(len(oodle)):
 			if oodle[doodle] == 'a': noodle.append(u"oodlE")
@@ -56,7 +55,6 @@ def oodlr( oodle, roodle=0 ):
 			else: noodle.append(oodle[doodle])
 		noodle = ''.join(noodle)
 		if roodle>0: print len(noodle)
-		return noodle
 	else:
 		for doodle in range(len(oodle)):
 			if oodle[doodle] in 'aeiou' or (oodle[doodle] == 'y' and oodley(oodle,doodle)):
@@ -67,7 +65,7 @@ def oodlr( oodle, roodle=0 ):
 				noodle.append(oodle[doodle])
 		noodle = ''.join(noodle)
 		if roodle>0: print len(noodle)
-		return noodle
+	return noodle
 
 parser = argparse.ArgumentParser(description='Oodler for Oodling Oodlable Text')
 parser.add_argument('input', metavar='input text or file', nargs='?', type=str, help='input', default='Hello World!')
