@@ -67,7 +67,7 @@ def oodlr( oodle, roodle=0 ):
 		if roodle>0: print len(noodle)
 	return noodle
 
-parser = argparse.ArgumentParser(description='Oodler for Oodling Oodlable Text')
+parser = argparse.ArgumentParser(description='Oodlr oodles oodlable text for your amusement')
 parser.add_argument('input', metavar='input text or file', nargs='?', type=str, help='input', default='Hello World!')
 parser.add_argument('output', metavar='output file', nargs='?', type=str, help='output', default='oodle.txt')
 parser.add_argument('recursive', metavar='recursively oodle', nargs='?', type=int, help='recursively oodle', default=0)
